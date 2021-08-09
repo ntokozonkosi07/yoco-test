@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'yoco-test';
+  charge: number = 0;
+
+  onAdd(charge: number){
+    debugger;
+    this.charge = charge;
+  }
 }

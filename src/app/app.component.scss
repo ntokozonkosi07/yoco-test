@@ -1,0 +1,17 @@
+@import './../styles/variables';
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+
+    div {
+        width: 400px;
+
+        &.history {
+            width: 220px;
+            margin-left: 10px;
+        }
+    }
+
+}

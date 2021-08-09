@@ -1,0 +1,48 @@
+@import './../../styles/variables';
+
+.keypad {
+    border: 3px solid $border-color;
+    border-radius: 5px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .view {
+        padding: 32px 16px;
+        font-family: 'monaco';
+        font-size: 32px;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .keys {
+        background-color: $background;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        cursor: pointer;
+
+        .key {
+            font-family: 'helveticaneue-medium';
+            font-size: 20px;
+            padding: 26px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid $border-color;
+            background-color: $key-backgroud;
+
+            &.border {
+                border-left: 1px solid $border-color;
+                border-right: 1px solid $border-color;
+            }
+
+            &.delete {
+                color: red;
+            }
+            &.add {
+                color: green;
+            }
+        }
+    }
+}

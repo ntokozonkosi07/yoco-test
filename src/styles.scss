@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+@import './styles/variables';
+
+@font-face{
+    font-family:"helveticaneue-medium";
+    src:url("https://candyfonts.com/wp-data/2019/04/06/51371/HelveticaNeue Medium.ttf") format("woff"),
+    url("https://candyfonts.com/wp-data/2019/04/06/51371/HelveticaNeue Medium.ttf") format("opentype"),
+    url("https://candyfonts.com/wp-data/2019/04/06/51371/HelveticaNeue Medium.ttf") format("truetype");
+}
+
+@font-face{
+    font-family:"monaco";
+    src:url("http://fonts.cdnfonts.com/css/monaco") format("woff"),
+    url("http://fonts.cdnfonts.com/css/monaco") format("opentype"),
+    url("http://fonts.cdnfonts.com/css/monaco") format("truetype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: $background;
+}

@@ -1,0 +1,23 @@
+<div class="keypad">
+    <div class="view">
+        {{ (keyValue || '0') | currencyFormatPipe: 'R' }}
+    </div>
+    <div class="keys">
+        <div class="key" (click)="onKeyPress(keysEnum.ONE)">1</div>
+        <div class="key border" (click)="onKeyPress(keysEnum.TWO)">2</div>
+        <div class="key" (click)="onKeyPress(keysEnum.THREE)">3</div>
+        <div class="key" (click)="onKeyPress(keysEnum.FOUR)">4</div>
+        <div class="key border" (click)="onKeyPress(keysEnum.FIVE)">5</div>
+        <div class="key" (click)="onKeyPress(keysEnum.SIX)">6</div>
+        <div class="key" (click)="onKeyPress(keysEnum.SEVEN)">7</div>
+        <div class="key border" (click)="onKeyPress(keysEnum.EIGHT)">8</div>
+        <div class="key" (click)="onKeyPress(keysEnum.NINE)">9</div>
+        <div class="key delete" (click)="onDelete()">
+            <fa-icon [icon]="faTimes"></fa-icon>
+        </div>
+        <div class="key border" (click)="onKeyPress(keysEnum.ZERO)">0</div>
+        <div class="key add" (click)="onAdd()">
+            <fa-icon [icon]="faCheckSquare"></fa-icon>
+        </div>
+    </div>
+</div>

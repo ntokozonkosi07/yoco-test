@@ -1,0 +1,25 @@
+@import './../../styles/variables';
+
+.charge-list {
+    border-radius: 5px; 
+    background-color: $border-color;
+    padding: 16px;
+
+    ul {
+        list-style: none;
+        font-family: 'monaco';
+        font-size: 16px;
+        color: $key-backgroud;
+        width: 100%;
+
+        li {
+            display: flex;
+            justify-content: flex-end;
+
+            &.devider{
+                border: 1px solid $key-backgroud;
+                border-radius: 5px;
+            }
+        }
+    }
+}
