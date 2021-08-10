@@ -1,8 +1,8 @@
 <div class="charge-list">
     <ul>
-        <li *ngFor="let charge of chargeList">R {{ charge }}</li>
+        <li *ngFor="let charge of chargeList">{{ charge | currency: 'R'}}</li>
         <li *ngIf="!isTotalVisiable">List of charges is empty</li>
         <li class="devider" *ngIf="isTotalVisiable"></li>
-        <li class="total" *ngIf="isTotalVisiable">{{total |currencyFormatPipe}}</li>
+        <li class="total" *ngIf="isTotalVisiable">{{total |currency: 'R'}}</li>
     </ul>
 </div>

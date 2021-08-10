@@ -3,16 +3,12 @@
 
 @font-face{
     font-family:"helveticaneue-medium";
-    src:url("https://candyfonts.com/wp-data/2019/04/06/51371/HelveticaNeue Medium.ttf") format("woff"),
-    url("https://candyfonts.com/wp-data/2019/04/06/51371/HelveticaNeue Medium.ttf") format("opentype"),
-    url("https://candyfonts.com/wp-data/2019/04/06/51371/HelveticaNeue Medium.ttf") format("truetype");
+    src:url("./fonts/HelveticaNeue\ Medium.ttf") format("woff")
 }
 
 @font-face{
     font-family:"monaco";
-    src:url("http://fonts.cdnfonts.com/css/monaco") format("woff"),
-    url("http://fonts.cdnfonts.com/css/monaco") format("opentype"),
-    url("http://fonts.cdnfonts.com/css/monaco") format("truetype");
+    src:url("./fonts/Monaco.woff") format("woff")
 }
 
 * {

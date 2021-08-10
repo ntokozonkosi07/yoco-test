@@ -17,7 +17,7 @@ export class ChargeListComponent implements OnInit {
   }
 
   get total(): string {
-    return this.chargeList.reduce((a, b) => a + b, 0).toString().replace('.','');
+    return this.chargeList.reduce((a, b) => a + b, 0).toString();
   }
 
   get isTotalVisiable(){
@@ -30,7 +30,7 @@ export class ChargeListComponent implements OnInit {
   }
 
   massageValue(value: number){
-    return value.toString().replace('.','');
+    return value.toString();
   }
 
 }
