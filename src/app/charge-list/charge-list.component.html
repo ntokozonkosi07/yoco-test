@@ -1,6 +1,9 @@
 <div class="charge-list">
     <ul>
-        <li *ngFor="let charge of chargeList">{{ charge | currency: 'R'}}</li>
+        <li *ngFor="let charge of chargeList;let i = index" [attr.data-index]="i" class="charge-item">
+            <fa-icon [icon]="faTimes" class="delete" (click)="deleteChargeItem(i)"></fa-icon>
+            <span>{{ charge | currency: 'R'}}</span>
+        </li>
         <li *ngIf="!isTotalVisiable">List of charges is empty</li>
         <li class="devider" *ngIf="isTotalVisiable"></li>
         <li class="total" *ngIf="isTotalVisiable">{{total |currency: 'R'}}</li>

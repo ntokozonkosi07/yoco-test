@@ -1,11 +1,15 @@
 import { Component, Input, OnInit } from '@angular/core';
 
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+
 @Component({
   selector: 'app-charge-list',
   templateUrl: './charge-list.component.html',
   styleUrls: ['./charge-list.component.scss']
 })
 export class ChargeListComponent implements OnInit {
+
+  faTimes = faTimes;
 
   chargeList: Array<number> = [];
 
@@ -31,6 +35,10 @@ export class ChargeListComponent implements OnInit {
 
   massageValue(value: number){
     return value.toString();
+  }
+
+  deleteChargeItem(index: number){
+    this.chargeList.splice(index, 1);
   }
 
 }

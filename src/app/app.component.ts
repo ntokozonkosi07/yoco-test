@@ -9,7 +9,6 @@ export class AppComponent {
   charge: number = 0;
 
   onAdd(charge: number){
-    debugger;
     this.charge = charge;
   }
 }

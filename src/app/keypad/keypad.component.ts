@@ -36,7 +36,6 @@ export class KeypadComponent implements OnInit {
 
   onAdd(){
     const transformValue = new CurrencyFormatPipePipe().transform(this.keyValue, '');
-    debugger;
     this.onAddEvent.emit(parseFloat(transformValue));
   }
 

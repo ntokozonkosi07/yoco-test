@@ -16,6 +16,16 @@
             display: flex;
             justify-content: flex-end;
 
+            &.charge-item {
+                display: flex;
+                justify-content: space-between;
+
+                fa-icon {
+                    color: red;
+                    cursor: pointer;
+                }
+            }
+
             &.devider{
                 border: 1px solid $key-backgroud;
                 border-radius: 5px;

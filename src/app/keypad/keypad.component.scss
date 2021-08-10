@@ -20,7 +20,7 @@
         background-color: $background;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-        cursor: pointer;
+        
 
         .key {
             font-family: 'helveticaneue-medium';
@@ -31,6 +31,7 @@
             align-items: center;
             border-top: 1px solid $border-color;
             background-color: $key-backgroud;
+            cursor: pointer;
 
             &.border {
                 border-left: 1px solid $border-color;
